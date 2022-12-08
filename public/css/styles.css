@@ -4,34 +4,45 @@ body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
    
 }
+.buscar{
+    font-size: 1.6em;
+}
 .bgYellow{
-    background-color: yellow;
+    background-color: rgb(238, 238, 5);
     text-align: center;
 }
+
 .link li{
+    display: block;
     padding-left: 5px;
     list-style: none;
     text-align: left;
     line-height: 1.6;
 
 }
+.link li i{
+    font-size: 1.4em;
+}
 .link a{
     text-decoration: none;
-    font-size: 1.8em;
+    font-size: 1.6em;
 }
 .card{
+    display: block;
     text-align: center;
+    font-size: 2em;
 }
 img{
     width: 100%;
 }
 a:hover{
-    font-weight: bold;
+    font-weight: 600;
     color: rgb(17, 17, 17);
 }
 .btn{
     background-color: rgba(0, 119, 255, 0.856);
-    font-size: 2.2em;
+    font-size: 1.7em;
+    padding: 8px 8px;
     border-radius: 3px;
     color: white;
 }
