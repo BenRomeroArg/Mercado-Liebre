@@ -5,7 +5,8 @@ body{
    
 }
 .buscar{
-    font-size: 1.7em;
+    font-size: 1.9em;
+    background-color: rgb(248, 244, 244);
 }
 .header{
     width:100%;
@@ -50,8 +51,10 @@ body{
     margin: 1em;
 }
 .hv:hover{
-    transform: scale(1.12);
-    transition: 1.7s;
+    transform: scale(1.11);
+    transition: 0.93s;
+    filter: drop-shadow(0 0 13px rgb(124, 124, 124));
+    background-color: rgb(255, 255, 255);
 }
 .img-producto{
     width: 50%;
@@ -72,6 +75,8 @@ button{
     border-radius: 4px;
     font-weight: bold;
     padding: 3px;
+    cursor: grab;
+ 
 }
 
 p:hover{
