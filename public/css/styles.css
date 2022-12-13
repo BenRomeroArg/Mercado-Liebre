@@ -10,13 +10,17 @@ body{
 }
 .header{
     width:100%;
-    background-color: rgb(238, 238, 5);
+    background-color: #EAC926;
     text-align: center;
 }
+.main{
+    width:90%;
+    margin: 0 auto;
+}
 .contenedor{
-    background-color: white;
+    background-color: #ebebeb;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     
 }
@@ -37,25 +41,43 @@ body{
     font-size: 1.6em;
 }
 .titulo{
-    font-size: 2.5em;
+    font-size: 24px;
 }
 
 .card{
     background-color: white;
     display: block;
-   box-shadow: 0 0 9px rgba(7, 7, 7,.457);
+    box-shadow: 0 0 9px rgba(7, 7, 7,.457);
     text-align: center;
-    font-size: 1.1em;
+    
     padding: 5px;
     border-radius: 9px;
     margin: 1em;
+    box-sizing: border-box;
 }
-.hv:hover{
-    transform: scale(1.11);
-    transition: 0.93s;
-    filter: drop-shadow(0 0 13px rgb(124, 124, 124));
-    background-color: rgb(255, 255, 255);
+.card-detalle{
+    margin: 0 auto;
+    border-top: solid 2px #ebebeb;
+    text-align: center;
+    width: 90%;
+    
 }
+.enviar{
+    color:white;
+    background-color: #03264C;
+    font-size: 1.2em;
+}
+.precio {
+    font-size: 18px;
+}
+.descuento{
+    font-size: 16px;
+    color: #39b54a;
+}
+.descripcion{
+    font-size: 16px;
+}
+
 .img-producto{
     width: 50%;
 }
@@ -64,7 +86,7 @@ body{
     box-sizing: border-box;
 }
 .btn{
-    background-color: dodgerblue;
+    background-color: #03264C;
     font-size: 1.7em;
     padding: 8px 8px;
     border-radius: 4px;
@@ -79,14 +101,9 @@ button{
  
 }
 
-p:hover{
-    font-weight: 700;
-    background-color: dodgerblue;
-    color: white;
-}
 .pie{
     width: 100%;
-    background-color: rgb(238, 238, 5);
+    background-color: #EAC926;
     text-align: center;
 }
 .pie i{
@@ -95,9 +112,14 @@ p:hover{
 .pie li{
     list-style: none;
 }
-@media(max-width: 409px){
+@media(min-width: 481px){
     .contenedor{
-        flex-direction: column;
+        flex-direction: row;
     }
-    
+    .card{
+        box-shadow: none;
+    }
+    .descripcion{
+        display: none;
+    }
 }
