@@ -18,7 +18,7 @@ body{
     margin: 0 auto;
 }
 .contenedor{
-    background-color: #ebebeb;
+    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -26,7 +26,7 @@ body{
 }
 
 .link li{
-    display: block;
+    display: none;
     padding-left: 5px;
     list-style: none;
     text-align: left;
@@ -112,8 +112,13 @@ button{
 .pie li{
     list-style: none;
 }
+
 @media(min-width: 481px){
+    .link li{
+        display: inline;
+    }
     .contenedor{
+        background-color: #ebebeb;
         flex-direction: row;
     }
     .card{
@@ -122,4 +127,21 @@ button{
     .descripcion{
         display: none;
     }
+}
+/*detalle.html*/
+.detalle{
+    text-align: left;
+}
+.font-1{
+    font-weight: bold;
+    font-size: 16px;
+}
+.border-simple{
+    border: #ebebeb 2px solid;
+}
+.header-2{
+    width:100%;
+    background-color: #EAC926;
+    text-align: center;
+    padding: 10px;
 }
