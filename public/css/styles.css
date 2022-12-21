@@ -4,144 +4,139 @@ body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
    
 }
-.buscar{
-    font-size: 1.9em;
-    background-color: rgb(248, 244, 244);
+
+.bg-yellow {
+    background-color: #eac926;
 }
-.header{
-    width:100%;
-    background-color: #EAC926;
-    text-align: center;
+.bg-dark-grey {
+    background-color: #666;
 }
-.main{
-    width:90%;
-    margin: 0 auto;
+  
+.bg-grey {
+    background-color: #ebebeb;
 }
-.contenedor{
+  
+.bg-blue {
+    background-color: #1259c3;
+}
+  
+.bg-white {
     background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    
 }
-
-.link li{
-    display: none;
-    padding-left: 5px;
-    list-style: none;
-    text-align: left;
-    line-height: 1.6;
-
+  
+.color-green {
+   color: #39b54a;
 }
-.link li i{
-    font-size: 1.4em;
+.font-m {
+    font-size: 12px;
 }
-.link a{
-    /*text-decoration: none;*/
-    font-size: 1.6em;
+.font-lg {
+    font-size: 16px;
 }
-.titulo{
-    font-size: 24px;
-}
-
-.card{
-    background-color: white;
-    display: block;
-    box-shadow: 0 0 9px rgba(7, 7, 7,.457);
-    text-align: center;
-    
-    padding: 5px;
-    border-radius: 9px;
-    margin: 1em;
-    box-sizing: border-box;
-}
-.card-detalle{
-    margin: 0 auto;
-    border-top: solid 2px #ebebeb;
-    text-align: center;
-    width: 90%;
-    
-}
-.enviar{
-    color:white;
-    background-color: #03264C;
-    font-size: 1.2em;
-}
-.precio {
+.font-xl {
     font-size: 18px;
 }
-.descuento{
-    font-size: 16px;
-    color: #39b54a;
+.title {
+    font-size: 24px;
 }
-.descripcion{
-    font-size: 16px;
+  
+.nav-link {
+    text-decoration: none;
+    color: inherit;
 }
-
-.img-producto{
+  
+.w-50 {
     width: 50%;
 }
-.img-banner{
-    width: 100%;
-    box-sizing: border-box;
+  
+.vw-90 {
+    width: 90vw;
 }
-.btn{
-    background-color: #03264C;
-    font-size: 1.7em;
-    padding: 8px 8px;
-    border-radius: 4px;
+  
+.w-100 {
+    width: 100%;
+}
+  
+.b-1 {
+    border-style: solid;
+}
+  
+.border-grey {
+    width: 90%;
+    
+    border-top: #ebebeb solid 1px;
+}
+  
+.bold {
+    font-weight: bold;
+}
+  
+.color-white {
     color: white;
 }
-button{
-    background-color: rgb(238, 238, 5);
-    border-radius: 4px;
-    font-weight: bold;
-    padding: 3px;
-    cursor: grab;
- 
-}
-
-.pie{
-    width: 100%;
-    background-color: #EAC926;
+  
+.text-center {
     text-align: center;
 }
-.pie i{
-    font-size: 2.7em;
+  
+.round {
+    border-radius: 50%;
 }
-.pie li{
+  
+.radius-1 {
+    border-radius: 5px;
+}
+  
+.p-1 {
+    padding: 8px;
+}
+  
+.py-1 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+  
+.my-1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+  
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+.product-shadow {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+.none-deco{
     list-style: none;
 }
+.display{
+    display:flex;
+    flex-direction: column;
+}
 
-@media(min-width: 481px){
-    .link li{
-        display: inline;
-    }
-    .contenedor{
-        background-color: #ebebeb;
+@media (min-width: 481px) {
+    /* tablet */
+    .display-card{
+        display: flex;
         flex-direction: row;
     }
-    .card{
-        box-shadow: none;
+   
+}
+  
+@media (min-width: 769px) {
+    /* laptop */
+    .product-shadow {
+      box-shadow: none;
     }
-    .descripcion{
-        display: none;
+  
+    .description {
+      display: none;
     }
 }
-/*detalle.html*/
-.detalle{
-    text-align: left;
-}
-.font-1{
-    font-weight: bold;
-    font-size: 16px;
-}
-.border-simple{
-    border: #ebebeb 2px solid;
-}
-.header-2{
-    width:100%;
-    background-color: #EAC926;
-    text-align: center;
-    padding: 10px;
+  
+@media (min-width: 1281px) {
+    /* desktop */
 }

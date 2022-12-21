@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-.pad-2{
+.pd-2{
     padding: 2px 2px;
+}
+.mg-2{
+    margin: 2px 2px;
 }
