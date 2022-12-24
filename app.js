@@ -16,3 +16,9 @@ app.get('/error', (req,res)=>{
 app.get('/producto-detalle',(req,res)=>{
     res.sendFile(path.join(__dirname,"views/detalle.html"))
 });
+app.get('/registrar',(req,res)=>{
+    res.sendFile(path.join(__dirname,"views/registrar.html"))
+});
+app.get('/login',(req,res)=>{
+    res.sendFile(path.join(__dirname,"views/login.html"))
+});
