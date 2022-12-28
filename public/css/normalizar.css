@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Roboto';
+    background-color: white;
+}
 .pd-2{
     padding: 2px 2px;
 }
