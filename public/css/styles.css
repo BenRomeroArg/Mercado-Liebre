@@ -13,6 +13,9 @@
 .bg-blue {
     background-color: #1259c3;
 }
+.bg-blue-c {
+    color: #1259c3;
+}
   
 .bg-white {
     background-color: white;
@@ -71,13 +74,13 @@
     width: 100%;
 }
   
-.b-1 {
-    border-style: solid;
-}
-  
+.bt-1 {
+    
+    border-width: 1px;    
+}  
 .border-grey {
-    width: 90%;
-    border-top: #ebebeb solid 1px;
+    width: 80%;
+    border-top: #ebebeb solid;
 }
   
 .bold {
@@ -105,8 +108,8 @@
 }
   
 .py-1 {
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
   
 .my-1 {
@@ -137,6 +140,34 @@
 }
 .flex{
     display:flex;
+}
+.flex-column{
+    flex-direction: column;
+}
+.flex-block{
+    display: block;
+}
+form {
+    padding-top: 50px;
+    height: 50vh;
+}
+.w-300{
+    max-width: 300px;
+}
+.h-1{
+    line-height: 2;
+}
+.camion-icon {
+    color: green;
+    border: green solid 1px;
+    border-radius: 50%;
+    padding: 5px;
+    position: absolute;
+    right: 15px;
+    top: -15px;
+}
+.relative {
+    position: relative;
 }
 @media (min-width: 481px) {
     /* tablet */
