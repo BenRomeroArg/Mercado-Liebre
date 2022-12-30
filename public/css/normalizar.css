@@ -13,3 +13,62 @@ body{
 .mg-2{
     margin: 2px 2px;
 }
+.w-50 {
+    width: 40%;
+}
+  
+.vw-90 {
+    width: 90vw;
+}
+  
+.w-100 {
+    width: 100%;
+}
+.bold {
+    font-weight: bold;
+}
+  
+.color-white {
+    color: white;
+}
+  
+.text-center {
+    text-align: center;
+}
+  
+.round {
+    border-radius: 50%;
+}
+  
+.radius-1 {
+    border-radius: 5px;
+}
+.mx-auto {
+    margin: 0 auto;
+}
+.none-deco{
+    list-style: none;
+}
+.flex{
+    display:flex;
+}
+.flex-column{
+    flex-direction: column;
+}
+.flex-block{
+    display: block;
+}
+.w-300{
+    max-width: 300px;
+}
+.h-1{
+    line-height: 2;
+}
+.p-1 {
+    padding: 10px;
+}
+  
+.py-1 {
+    padding: 10px;
+    
+}

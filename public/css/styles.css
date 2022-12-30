@@ -41,6 +41,27 @@
 }
 .logo{
     width: 200px;
+}
+.buscar{
+    display: inline;
+    margin: 0;
+    background-color: white;
+    width: 30%;
+    height: 20px;
+
+
+}
+.buscar input{
+    border: none;
+    border-right: solid 0.5px #ebebeb;
+    width: 89%;
+}
+.buscar button{
+    background-color: white;
+    margin:0;
+    border: none;
+    cursor:grab;
+    width: 9%;  
 }  
 .main-nav-bar{
     display:none;
@@ -62,100 +83,34 @@
     padding: 5px;
     font-size: 17px;
 }  
-.w-50 {
-    width: 40%;
-}
-  
-.vw-90 {
-    width: 90vw;
-}
-  
-.w-100 {
-    width: 100%;
-}
-  
-.bt-1 {
-    
-    border-width: 1px;    
-}  
 .border-grey {
-    width: 80%;
-    border-top: #ebebeb solid;
-}
-  
-.bold {
-    font-weight: bold;
-}
-  
-.color-white {
-    color: white;
-}
-  
-.text-center {
-    text-align: center;
-}
-  
-.round {
-    border-radius: 50%;
-}
-  
-.radius-1 {
-    border-radius: 5px;
-}
-  
-.p-1 {
-    padding: 8px;
-}
-  
-.py-1 {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-  
+    align-content: center;
+    justify-content: center;
+    width: 90%;
+    border-top: #ebebeb solid 1px;
+}   
 .my-1 {
     margin-top: 10px;
     margin-bottom: 10px;
-}
-  
-.mx-auto {
-   margin: 0 auto;
-}
-  
-.product-shadow:hover {
-    box-shadow: 0px 0px 10px  rgb(100, 100, 100);
-}
-.none-deco{
-    list-style: none;
 }
 .display h3{
     display:none;
     flex-direction: column;
 }
-.d-card:hover h3{
-    display:block;
-    
-}
 .display-card{
     gap:5px;
 }
-.flex{
-    display:flex;
+.d-card{
+    transition-duration: 1s;
+   
 }
-.flex-column{
-    flex-direction: column;
-}
-.flex-block{
-    display: block;
+.d-card:hover{
+    box-shadow: 0px 0px 10px  rgb(100, 100, 100);
+    border-radius: 5px;
 }
 form {
     padding-top: 50px;
     height: 50vh;
-}
-.w-300{
-    max-width: 300px;
-}
-.h-1{
-    line-height: 2;
 }
 .camion-icon {
     color: green;
@@ -163,8 +118,12 @@ form {
     border-radius: 50%;
     padding: 5px;
     position: absolute;
-    right: 15px;
+    right: 1px;
     top: -15px;
+    transition-duration: 1s;
+}
+.camion-icon:hover{
+    transform: rotate(-50deg);
 }
 .relative {
     position: relative;
@@ -178,7 +137,9 @@ form {
         display: flex;
         flex-direction: row;
     }
-   
+   .d-card h3{
+    display: block;
+   }
 }
   
 @media (min-width: 769px) {

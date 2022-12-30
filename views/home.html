@@ -21,12 +21,13 @@
     <header class="main-header bg-yellow">
       <div class="main-header-top-bar">
         <img class="logo" src="/images/logo-mercado-liebre.svg" alt="Mercado Liebre" />
-        <input class="w-50"
+        <div class="buscar">
+          <input class="w-50"
                 type="text"
                 placeholder="Buscá productos por nombre, marcas o palabras clave"
               />
-        <button><i class="fa-solid fa-magnifying-glass"></i></button>
-      
+          <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>  
         <h2 class="copy-header">
           <i class="fa-solid fa-hand-holding-dollar"></i>
           Comprá en cuotas y sin
@@ -68,17 +69,17 @@
       </div>
           
     </header>
-    <main class="display p-1 vw-90 mx-auto">
+    <main class="main display p-1 vw-90 mx-auto">
         <h2 class="title">Basado en tu última visita</h2>
-        <section class="display-card py-1 flex flex-wrap gap">
+        <section class="display-card p-1">
          
-          <article class="d-card text-center bg-white my-1 product-shadow">
+          <article class="d-card text-center bg-white my-1">
             <img
               class="w-100"
               src="/images/img-cafetera-moulinex.jpg"
               alt="Cafetera Moulinex"
             />
-            <div class="bt-1 border-grey p-1 flex flex-wrap relative">
+            <div class="border-grey p-1 relative">
               <i class="fa-solid fa-cart-shopping camion-icon"></i>
               <p class="text-xl">$6.770</p>
               <p class="color-green text-lg">40% OFF</p>
@@ -128,7 +129,7 @@
         <h2>Ofertas</h2>
         <section class="display-card p-1">
           
-          <article class="d-card text-center bg-white my-1 product-shadow">
+          <article class="d-card text-center bg-white my-1">
             <img
               class="w-100"
               src="/images/img-cafetera-moulinex.jpg"
@@ -182,7 +183,7 @@
           </article>
         </section>
       </main>
-    <footer class="pie">
+    <footer class="pie bg-yellow py-1">
         <ul class="text-center none-deco">
             <li class="pad">
                 <i class="fa-regular fa-credit-card bg-blue-c font-xl"></i>
