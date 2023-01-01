@@ -16,16 +16,59 @@
     <link rel = "stylesheet" href="/css/styles.css"/>
 </head>
 <body>
-    <header class="header-2">
-        <img src="/images/logo-mercado-liebre.svg" alt="Sin imagen">
-        <label>
-            <button  type="submit"><i class="fab fa-sistrix buscar"></i></button><input class="buscar"type="text" placeholder="¿Que estas buscando?">
-        </label>    
-        <h3>Compra en cuotas y sin tarjetas de credito.<i class="fas fa-hand-holding-usd"></i></h3>
-    </header>   
-    <main>
-        <article class="card pad border-simple">
-            <img class="img-producto"src="/images/img-cafetera-moulinex.jpg" alt="falta imagen">                        
+    <header class="main-header bg-yellow">
+        <div class="main-header-top-bar">
+          <img class="logo" src="/images/logo-mercado-liebre.svg" alt="Mercado Liebre" />
+          <h2 class="copy-header">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+            Comprá en cuotas y sin tarjeta de crédito
+          </h2>
+        </div>
+        <div class="buscar">
+          <input class="w-50"
+                type="text"
+                placeholder="Buscá productos por nombre, marcas o palabras clave"
+              />
+          <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>   
+        <nav class="main-nav-bar">
+          
+          <ul class="">
+            <li><a class="" href="#">Ofertas</a></li>
+            <li><a class="" href="#">Tiendas Oficiales</a></li>
+            <li><a class="" href="#">Vender</a></li>
+            <li><a class="" href="#">Ayuda</a></li>
+          </ul>
+          <ul class="">
+            <li>
+              <a class="" href="/registrar"
+                      >Crea tu cuenta <i class="fa-solid fa-address-card"></i
+                    >
+              </a>
+            </li>
+            <li>
+              <a class="" href="/login"
+                      >Ingresá <i class="fa-solid fa-right-to-bracket"></i
+                    >
+              </a>
+            </li>
+            <li>
+              <a class="" href="#"
+                      >Mis Compras <i class="fa-solid fa-basket-shopping"></i
+                    >
+              </a>
+            </li>
+          </ul>
+          
+        </nav>
+        <div class="text-center hamburger-btn">
+          <i class="fa-solid fa-bars p-1 bg-blue radius-1 color-white bold"></i>
+        </div>
+            
+    </header>
+    <main class="main display p-1 vw-90  mx-auto">
+        <article class="py-1 flex">
+            <img class="img-producto w-50"src="/images/img-cafetera-moulinex.jpg" alt="falta imagen">                        
             <div class="card-detalle">
                 <div class="detalle font-1">
                     <ul>
@@ -39,12 +82,38 @@
                 <p class="descripcion-1">Cafetera Moulinex</p>
                 <button class="enviar" type="submit">Enviar<i class="fa-solid fa-cart-shopping"></i></button>
             </div>
-        </article>
-        <article class="card pad-2 border-simple">
-            <h3>Volver a la pagina principal de <a href="/">Mercado Liebre</a></h3>
-
-        </article>
-       
+        </article> 
     </main>
+    <footer class="pie bg-yellow py-1">
+        <ul class="text-center none-deco">
+            <li class="pad">
+                <i class="fa-regular fa-credit-card bg-blue-c font-xl"></i>
+                <h4>Paga con tarjeta o en efectivo</h4>
+                <h5>Con Mercado Liebre Cash, 
+                    tenés cuotas sin interés con tarjeta o
+                     en efectivo en puntos de pagos.¡Y siempre es seguro! </h5>
+            </li>
+            <li class="pad">
+                <i class="fa-solid fa-cart-shopping bg-blue-c font-xl"></i>
+                <h4>Envío gratis desde $ 2.500</h4>
+                <h5>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+productos. Es un beneficio de Mercado Puntos.</h5>
+
+            </li>
+            <li class="pad">
+                <i class="fas fa-hand-holding-usd bg-blue-c font-xl"></i>
+                <h4>Seguridad, de principio a fin</h4>
+                <h5>
+                    ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+porque estás siempre protegid@.
+
+                </h5>
+            </li>
+            <li class="pad"><h4>Copyright © 1999-2020 MercadoLiebre S.R.L.</h4></li>
+        </ul>
+        <article class="bg-yellow py-1">
+            <h3>Volver a la pagina principal de <a href="/">Mercado Liebre</a></h3>
+        </article>
+    </footer>
 </body>
 </html>

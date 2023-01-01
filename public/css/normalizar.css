@@ -20,7 +20,7 @@ body{
 .vw-90 {
     width: 90vw;
 }
-  
+
 .w-100 {
     width: 100%;
 }
@@ -71,4 +71,10 @@ body{
 .py-1 {
     padding: 10px;
     
+}
+.hv-btn:hover{
+    background-color: rgba(7, 157, 216, 0.333);
+}
+.main-nav-bar a:hover{
+    color: white;
 }

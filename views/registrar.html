@@ -16,54 +16,59 @@
     <link rel = "stylesheet" href="/css/styles.css"/>
 </head>
 <body>
-    <header class="display bg-yellow p-1">
-        
-        <img class="w-50" src="/images/logo-mercado-liebre.svg" alt="Mercado Liebre" />
-        
-        <div class="p-1">
-          <input
+<header class="main-header bg-yellow">
+    <div class="main-header-top-bar">
+      <img class="logo" src="/images/logo-mercado-liebre.svg" alt="Mercado Liebre" />
+      <h2 class="copy-header">
+        <i class="fa-solid fa-hand-holding-dollar"></i>
+        Comprá en cuotas y sin tarjeta de crédito
+      </h2>
+    </div>
+    <div class="buscar">
+      <input class="w-50"
             type="text"
             placeholder="Buscá productos por nombre, marcas o palabras clave"
           />
-          <button><i class="fa-solid fa-magnifying-glass"></i></button>
-        </div>
-        <p class="text-center">
-          <i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin
-          tarjeta de crédito
-        </p>
-        <nav>
-          <ul class="py-1">
-            <li><a class="nav-link" href="#">Ofertas</a></li>
-            <li><a class="nav-link" href="#">Tiendas Oficiales</a></li>
-            <li><a class="nav-link" href="#">Vender</a></li>
-            <li><a class="nav-link" href="#">Ayuda</a></li>
-          </ul>
-          <ul class="py-1">
-            <li>
-              <a class="nav-link" href="/registrar"
-                >Crea tu cuenta <i class="fa-solid fa-address-card"></i
-              ></a>
-            </li>
-            <li>
-              <a class="nav-link" href="#"
-                >Ingresá <i class="fa-solid fa-right-to-bracket"></i
-              ></a>
-            </li>
-            <li>
-              <a class="nav-link" href="#"
-                >Mis Compras <i class="fa-solid fa-basket-shopping"></i
-              ></a>
-            </li>
-          </ul>
-        </nav>
-        <div class="text-center">
-          <i class="fa-solid fa-bars p-1 bg-blue radius-1 color-white bold"></i>
-        </div>
+      <button><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>   
+    <nav class="main-nav-bar">
       
-</header>
+      <ul class="">
+        <li><a class="" href="#">Ofertas</a></li>
+        <li><a class="" href="#">Tiendas Oficiales</a></li>
+        <li><a class="" href="#">Vender</a></li>
+        <li><a class="" href="#">Ayuda</a></li>
+      </ul>
+      <ul class="">
+        <li>
+          <a class="" href="/registrar"
+                  >Crea tu cuenta <i class="fa-solid fa-address-card"></i
+                >
+          </a>
+        </li>
+        <li>
+          <a class="" href="/login"
+                  >Ingresá <i class="fa-solid fa-right-to-bracket"></i
+                >
+          </a>
+        </li>
+        <li>
+          <a class="" href="#"
+                  >Mis Compras <i class="fa-solid fa-basket-shopping"></i
+                >
+          </a>
+        </li>
+      </ul>
+      
+    </nav>
+    <div class="text-center hamburger-btn">
+      <i class="fa-solid fa-bars p-1 bg-blue radius-1 color-white bold"></i>
+    </div>
+        
+</header>  
 <main class="mx-auto py-1">
   <div class="mx-auto flex-block py-1 align-center w-300">
-    <form action="/" method="post" class="mx-auto flex flex-column h-1" >
+    <form action="/" method="post" class="mx-auto flex flex-column h-1 bg-grey py-1" >
       <label for="nombre">Usuario</label>
       <input type="text" name="nombre" id="nombre" placeholder="Nombre">
       <label for="email">E-mail</label>
@@ -72,37 +77,37 @@
       <input type="password" name="password" id="password" placeholder="contraseña">
       <label for="password">Repetir contraseña</label>
       <input type="password" name="password" id="password" placeholder="contraseña">
-      <button type="submit">Ingresar</button>
+      <button type="submit" class="bg-blue p-1 bold mg-2 hv-btn">Ingresar</button>
       
     </form>
 </main>
-<footer class="pie bg-yellow">
-    <ul class="text-center none-deco">
-        <li class="pad">
-            <i class="fa-regular fa-credit-card bg-blue-c font-xl"></i>
-            <h4>Paga con tarjeta o en efectivo</h4>
-            <h5>Con Mercado Liebre Cash, 
-                tenés cuotas sin interés con tarjeta o
-                 en efectivo en puntos de pagos.¡Y siempre es seguro! </h5>
-        </li>
-        <li class="pad">
-            <i class="fa-solid fa-cart-shopping bg-blue-c font-xl"></i>
-            <h4>Envío gratis desde $ 2.500</h4>
-            <h5>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+<footer class="pie bg-yellow py-1">
+  <ul class="text-center none-deco">
+      <li class="pad">
+          <i class="fa-regular fa-credit-card bg-blue-c font-xl"></i>
+          <h4>Paga con tarjeta o en efectivo</h4>
+          <h5>Con Mercado Liebre Cash, 
+              tenés cuotas sin interés con tarjeta o
+               en efectivo en puntos de pagos.¡Y siempre es seguro! </h5>
+      </li>
+      <li class="pad">
+          <i class="fa-solid fa-cart-shopping bg-blue-c font-xl"></i>
+          <h4>Envío gratis desde $ 2.500</h4>
+          <h5>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
 productos. Es un beneficio de Mercado Puntos.</h5>
 
-        </li>
-        <li class="pad">
-            <i class="fas fa-hand-holding-usd bg-blue-c font-xl"></i>
-            <h4>Seguridad, de principio a fin</h4>
-            <h5>
-                ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+      </li>
+      <li class="pad">
+          <i class="fas fa-hand-holding-usd bg-blue-c font-xl"></i>
+          <h4>Seguridad, de principio a fin</h4>
+          <h5>
+              ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
 porque estás siempre protegid@.
 
-            </h5>
-        </li>
-        <li class="pad"><h4>Copyright © 1999-2020 MercadoLiebre S.R.L.</h4></li>
-    </ul>
+          </h5>
+      </li>
+      <li class="pad"><h4>Copyright © 1999-2020 MercadoLiebre S.R.L.</h4></li>
+  </ul>
 </footer>
     
 </body>
