@@ -16,7 +16,9 @@ body{
 .w-50 {
     width: 40%;
 }
-  
+.wp-80{
+    width: 80px;
+}  
 .vw-90 {
     width: 90vw;
 }
