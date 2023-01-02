@@ -140,6 +140,10 @@ form {
 .relative {
     position: relative;
 }
+.detalle{
+    max-width: 390px;
+    display: flex;
+}
 @media (min-width: 481px) {
     /* tablet */
     .nav-link{
