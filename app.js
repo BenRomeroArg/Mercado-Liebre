@@ -2,9 +2,10 @@ const express = require('express');
 const app = express();
 const path = require('path');
 app.use(express.static(path.join(__dirname, "public")))
+const PORT = process.env.PORT || 8000;//variable de entorno
 
-app.listen(8000, ()=>{
-    console.log('En linea');
+app.listen(PORT, ()=>{
+    console.log(`En linea puerto ${PORT}`);
 });
 
 app.get('/',(req,res)=>{
