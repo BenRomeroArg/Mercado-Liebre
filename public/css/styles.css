@@ -38,19 +38,25 @@
 }
 .main-header {
     padding: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0px;
 }
 
 .logo{
-    width: 49%;
+    width: 47%;
 }
 .buscar{
     display: inline;
-    margin: 0;
+    margin: 10px 10px;
     background-color: white;
-    max-width: 300px;
+    width: 50%;
+    /*max-width: 300px;*/
     height: 20px;
     padding: 5px;
     gap: 5px;
+    border-radius: 7px;
 }
 .buscar input{
     border: none;
@@ -73,7 +79,7 @@
 }
 .copy-header{
     display: block;
-    text-align: right;
+    text-align: center;
     align-content: center;
     font-size: 18px;
     width: 90%;
@@ -93,7 +99,10 @@
     font-size: 17px;
 }
 .hamburger-btn{
-    margin: 10px;
+    margin-top: 10px;
+}
+.main {
+    margin-top: 25vh;
 }  
 .border-grey {
     align-content: center;
@@ -208,4 +217,15 @@ form {
   
 @media (min-width: 1281px) {
     /* desktop */
+    .buscar {
+        width: 50%;
+
+    }
+    .main-header img{
+        height: 25vh;
+    }
+    .main {
+        margin-top: 37vh;
+    }
+    
 }
