@@ -74,7 +74,11 @@ body{
     padding: 10px;
     
 }
+.hv-btn{
+    transition-duration: 0.8s ;
+}
 .hv-btn:hover{
+    transform: scale(0.95);
     background-color: rgba(7, 157, 216, 0.333);
 }
 .main-nav-bar a:hover{
