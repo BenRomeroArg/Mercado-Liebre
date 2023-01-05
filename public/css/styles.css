@@ -1,41 +1,5 @@
 
-.bg-yellow {
-    background-color: #eac926;
-}
-.bg-dark-grey {
-    background-color: #666;
-}
-  
-.bg-grey {
-    background-color: #ebebeb;
-}
-  
-.bg-blue {
-    background-color: #1259c3;
-}
-.bg-blue-c {
-    color: #1259c3;
-}
-  
-.bg-white {
-    background-color: white;
-}
-  
-.color-green {
-   color: #39b54a;
-}
-.font-m {
-    font-size: 12px;
-}
-.font-lg {
-    font-size: 16px;
-}
-.font-xl {
-    font-size: 18px;
-}
-.title {
-    font-size: 24px;
-}
+
 .main-header {
     padding: 10px;
     position: fixed;
