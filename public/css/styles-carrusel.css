@@ -18,6 +18,9 @@
     .img-carrusel{
         width: 50%; 
     }
+    .slide-inner {
+        width: 70%;
+    }
 }
 .slide-inner {
     position: relative;
@@ -104,8 +107,9 @@
     color: #828282;
     cursor: pointer;
     display: block;
-    font-size: 35px;
+    font-size: 40px;
     transition: 0.7s all;
+    padding-top: 5px;
 }
 
 .slide-circulo:hover {
