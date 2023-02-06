@@ -17,7 +17,10 @@
     <link rel = "stylesheet" href="/css/styles.css"/>
     <link href="css/styles-carrusel.css" rel="stylesheet">
     <link rel = "stylesheet" href="/css/carrusel-v2.css">
-   
+    <link rel="stylesheet" href="/css/cssScript.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js" integrity="sha512-3WFaXQUsbGieECwv3t3DvyAkZ7pp+/rIKOQnx7NKhfwIF0u2l+DYsE2eF635ewJVj3YTU4/Ug6UqEkSTZCiSew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel ="stylesheet" href="/css/cssScript.css">
 </head>
 <body class="bg-grey">
     
@@ -25,6 +28,10 @@
     <main class="main display p-1 vw-90 mx-auto bg-grey">
         <section class="carruselUno p-1">
           <%- include('partials/carrusel')%>
+        </section>
+        <section class="bannerD">
+          <h4>Hasta 40% descuento a nuestros clientes</h4>
+          <div class="small"></div>
         </section>
         <h2 class="title">Basado en tu última visita</h2>
         <section class="display-card p-1">
@@ -141,6 +148,40 @@
         </section>
       </main>
     <%- include('partials/footer')%>
+  <script type="text/javascript">
+    let circleY =[]
 
+    function setup() {
+
+      let cnv = createCanvas(550, 150);
+      cnv.class('small');
+      for (let i = 0; i < 43; i++) {
+        circleY[i] = random(height);
+      }   
+    }
+
+    function draw() {
+      background(50);
+      Texto();
+   
+      for (let i = 0; i < circleY.length; i++) {
+          let circleX = width * i / circleY.length;
+          circle(circleX, circleY[i], 15);
+          fill(color(206, 135, 5))
+          circleY[i]++;
+          
+        if (circleY[i] > height) {
+            circleY[i] = 0;
+        }
+      }
+    }
+
+    function Texto(){
+      let texto = "DIGITAL STORE 40% descuento a nuestros clientes"
+      let nota = text(texto,5,150);
+      nota.textSize(23);
+      nota.textAlign(LEFT);
+    }
+  </script>
 </body>
 </html>
