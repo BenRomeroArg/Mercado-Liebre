@@ -1,0 +1,55 @@
+<div class="slidesshow-container">
+    <div class="mySlides fade">
+        <img src="/images/img-macbook-pro-2019.jpg" >
+        <div class="text">Producto-Uno</div>
+    </div>
+    <div class="mySlides fade">
+        <img src="/images/img-tv-samsung-smart.jpg" >
+        <div class="text">Producto-Dos</div>
+    </div>
+    <div class="mySlides fade">
+        <img src="/images/img-samsung-galaxy-s10.jpg">
+        <div class="text">Producto-Tres</div>
+    </div>
+    <a class="prev1" onclick="plusSlides(-1)">[<]</a>
+    <a class="next1" onclick="plusSlides(1)">[>]</a>
+</div>
+<!--circulos del slide-->
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlides(1)"></span>
+    <span class="dot" onclick="currentSlides(2)"></span>
+    <span class="dot" onclick="currentSlides(3)"></span>
+</div>
+<script>
+    let slideIndex = 1;
+
+    showSlides(slideIndex);
+
+    function plusSlides(n){
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlides(n){
+        showSlides(slideIndex = n)
+    }   
+
+    function showSlides(n){
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if(n > slides.length){
+            slideIndex = 1;
+        }
+        if(n < 1){
+            slideIndex = slides.length;
+        }
+        for(i = 0; i < slides.length; i++){
+            slides[i].style.display = "none";
+        }
+        for(i = 0; i < dots.length; i++){
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+    }
+</script>
